@@ -117,6 +117,42 @@ input[type=date]:focus::-webkit-datetime-edit {
     color: black !important;
 }
 
+.card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    max-width: 300px;
+    margin: 20px;
+    text-align: left;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    display: inline-block;
+    color:#000;
+}
+
+.card h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.card p {
+    margin: 5px 0;
+}
+
+.book-button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+}
+.book-button:hover {
+    background-color: #0069d9;
+}
+
     </style>
 </head>
 <body>
@@ -130,5 +166,35 @@ input[type=date]:focus::-webkit-datetime-edit {
         <span>
           <input class="balloon" id="galaxy" type="date" placeholder="" required/><label for="galaxy">Date</label>
         </span>
+        <span><button class="book-button">Book Now</button>
+        </div></span>
+        
+        <h2>Popular Route</h2>
+      <div class="card">
+        <h2>Shimla to Chandigarh</h2>
+        <p><strong>Price:</strong> From INR 238</p>
+        <p><strong>Bus Options:</strong> 48</p>
+        <p><strong>First Bus:</strong> 06:12</p>
+        <p><strong>Last Bus:</strong> 22:40</p>
+        <button class="book-button">See Options</button>
+    </div>
+    
+    <div class="card">
+        <h2>Kangra to Chandigarh</h2>
+        <p><strong>Price:</strong> From INR 338</p>
+        <p><strong>Bus Options:</strong> 23</p>
+        <p><strong>First Bus:</strong> 08:00</p>
+        <p><strong>Last Bus:</strong> 23:30</p>
+        <button class="book-button">See Option</button>
+    </div>
+    
+    <div class="card">
+        <h2>Shimla to Delhi</h2>
+        <p><strong>Price:</strong> From INR 360</p>
+        <p><strong>Bus Options:</strong> 50</p>
+        <p><strong>First Bus:</strong> 05:42</p>
+        <p><strong>Last Bus:</strong> 23:40</p>
+        <button class="book-button">See Option</button>
+    </div>
 </body>
 </html>

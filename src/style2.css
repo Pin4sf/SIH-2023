@@ -1,0 +1,292 @@
+/* 
+.container {
+    font-family: "'Rubik', sans-serif",
+  }
+
+
+.nav
+{
+    display: 'flex';
+}
+
+
+.row{
+
+    max-width:'800px';
+    
+    margin: '0 auto';
+    padding: '60px 30px';
+    background: '#032429';
+    position: 'relative';
+    z-index: 1;
+text-align: center;textAlign: 'center';
+  }
+
+
+.heading1 {
+    margin: '5px 5px 5px 15px',
+  }
+
+
+  .rowBefore {
+    position: 'absolute';
+    content: '""';
+    display: 'block';
+    top: 0;
+    left: '-5000px';
+    height: '100%';
+    width: '15000px';
+    z-index: -1;
+    background: '#B2E3AF';
+  }
+
+
+  .rowSpan {
+    position: 'relative';
+    display: 'inline-block';
+    margin: '30px 10px';
+  }
+
+
+
+  .balloon{
+    display: 'inline-block';
+    width: '215px';
+    padding: '10px 0 10px 15px';
+    
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 400;
+    color: '#377D6A';
+    background: '#efefef';
+    border: 0;
+    border-radius: '3px';
+    outline: 0;
+    text-indent: '60px';
+    transition: 'all 0.3s ease-in-out';
+    
+  }
+
+
+
+  .balloonPlaceholder {
+    color: '#efefef';
+    text-indent: 0;
+    font-weight: 300;
+  }
+
+
+
+  .balloonLabel {
+    display: 'inline-block';
+    position: 'absolute';
+    top: '8px';
+    left: 0;
+    bottom: '8px';
+    padding: '5px 15px';
+    color: '#032429';   
+    font-size: '11px';
+    font-weight: 700;
+    text-transform: 'uppercase';
+    text-Shadow: '0 1px 0 rgba(19, 74, 70, 0)';
+    transition: 'all 0.3s ease-in-out';
+    border-radius: '3px';
+    background: 'rgba(122, 184, 147, 0)'
+  }
+
+
+
+
+  .balloonLabelAfter {
+    position: 'absolute';
+    content: '""';
+    width: 0;
+    height: 0;
+    top: '100%';
+    left: '50%';
+    margin-left: '-3px';
+    border-left: '3px solid transparent';
+    border-right: '3px solid transparent';
+    border-top: '3px solid rgba(122, 184, 147, 0)';
+    transition: 'all 0.3s ease-in-out',
+  }
+
+
+
+
+  .balloonFocus{
+    color: '#377D6A';
+    text-indent: 0;
+    background: '#fff';
+  }
+  .balloonRequiredInvalid {
+    color: 'transparent',
+  }
+  .balloonFocusLabel {
+    color: '#fff';
+    text-shadow: '0 1px 0 rgba(19, 74, 70, 0.4)';
+    background: '#7ab893';
+    transform: 'translateY(-40px)';
+  }
+
+
+
+  .balloonFocusLabelAfter {
+    border-top: '4px solid #7ab893';
+  }
+  .inputDateRequiredInvalid {
+    color: 'transparent';
+  }
+  .inputDateFocus{
+    color: 'black !important';
+  }
+  .pageContent {
+    display: 'grid';
+    grid-gap: '1rem';
+    padding: '1rem';
+    max-width: '1024px';
+    margin: '0 auto';
+    font-family: 'var(--font-sans)';
+  }
+
+
+  .pageContent600px{
+    grid-template-columns: 'repeat(2, 1fr)';
+  }
+  .pageContent800px{
+    grid-template-columns: 'repeat(4, 1fr)'
+  }
+  .card {
+    position: 'relative';
+    display: 'flex';
+    align-items: 'flex-end';
+    overflow: 'hidden';
+    padding: '1rem';
+    width: '100%';
+    text-align: 'center';
+    color: 'whitesmoke';
+    background-color: 'whitesmoke';
+    box-Shadow: '0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1)';
+  }
+
+
+
+
+
+
+
+  .card600px {
+    height: '350px';
+  }
+  .cardBefore {
+    content: '""';
+    position: 'absolute';
+    top: 0;
+    left: 0;
+    width: '100%';
+    height: '110%';
+    background-size: 'cover';
+    background-position: '0 0';
+    transition: 'transform calc(var(--d) * 1.5) var(--e)';
+    pointer-Events: 'none';
+  }
+  .cardAfter{
+    content: '""';
+    display: 'block';
+    position: 'absolute';
+    top: 0;
+    left: 0;
+    width: '100%';
+    height: '200%';
+    pointer-Events: 'none';
+    background-image: 'linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.009) 11.7%, rgba(0, 0, 0, 0.034) 22.1%, rgba(0, 0, 0, 0.072) 31.2%, rgba(0, 0, 0, 0.123) 39.4%, rgba(0, 0, 0, 0.182) 46.6%, rgba(0, 0, 0, 0.249) 53.1%, rgba(0, 0, 0, 0.32) 58.9%, rgba(0, 0, 0, 0.394) 64.3%, rgba(0, 0, 0, 0.468) 69.3%, rgba(0, 0, 0, 0.54) 74.1%, rgba(0, 0, 0, 0.607) 78.8%, rgba(0, 0, 0, 0.668) 83.6%, rgba(0, 0, 0, 0.721) 88.7%, rgba(0, 0, 0, 0.762) 94.1%, rgba(0, 0, 0, 0.79) 100%)';
+    transform: 'translateY(-50%)';
+    transition: 'transform calc(var(--d) * 2) var(--e)';
+  }
+
+
+
+
+
+  .card1Before {
+    background-image: 'url(https://images.unsplash.com/photo-1517021897933-0e0319cfbc28?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ)';
+  }
+  .card2Before {
+    background-Image: 'url(https://images.unsplash.com/photo-1533903345306-15d1c30952de?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ)';
+  }
+  .card3Before {
+    background-image: 'url(https://images.unsplash.com/photo-1545243424-0ce743321e11?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ)';
+  }
+  .card4Before {
+    background-image: 'url(https://images.unsplash.com/photo-1531306728370-e2ebd9d7bb99?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ)';
+  }
+  .content {
+    position: 'relative';
+    display: 'flex';
+    flex-direction: 'column';
+    align-items: 'center';
+    width: '100%';
+    padding: '1rem';
+    transition: 'transform var(--d) var(--e)';
+    z-index: 1;
+  
+  }
+
+
+
+
+
+
+
+
+  .contentChild {
+    margin-top: '1rem',
+  }
+  .title{
+    font-Size: '1.3rem';
+    font-Weight: 'bold';
+    line-height: '1.2';
+  }
+  .copy {
+    font-Family: 'var(--font-serif)';
+    font-Size: '1.125rem';
+    font-style: 'italic';
+    line-Height: '1.35';
+  }
+ . btn {
+    cursor: 'pointer';
+    margin-Top: '1.5rem';
+    padding: '0.75rem 1.5rem';
+    font-Size: '0.65rem';
+    font-Weight: 'bold';
+    letter-spacing: '0.025rem';
+    text-transform: 'uppercase';
+    color: 'white';
+    background-Color: 'black';
+    border: 'none';
+  }
+  .btnHover {
+    background-Color: '#0d0d0d';
+  }
+  .btnFocus{
+    outline: '1px dashed yellow';
+    outline-offset: '3px';
+  }
+  .bookButton{
+    margin-Top: '10px';
+    margin-Bottom: '10px';
+    background-Color: '#007bff';
+    color: '#fff';
+    border: 'none';
+    padding: '10px 20px';
+    border-radius: '4px';
+    font-size: '1em';
+    cursor: 'pointer';
+    position: 'relative';
+    right: '-1300px';
+  }
+
+
+  .bookButtonHover {
+    background-color: '#0069d9';
+  }
+ */
